@@ -7,8 +7,7 @@ import warnings
 sns.set()
 
 # importing the data frame
-df = pd.read_csv()
-"F:/Deep Learning/mlcourse_open/telecom_churn.csv"
+df = pd.read_csv("F:/Deep Learning/mlcourse_open/telecom_churn.csv")
 features = ['Total day minutes','Total intl calls']
 df[features].hist(figsize=(12,4))
 df[features].plot(kind='density', subplots=True, layout=(1, 2), sharex=False, figsize=(12,4))
